@@ -1,0 +1,5 @@
+prompt: 'λ '
+message: 'Welcome to Ruby Shell v1.2'
+exit: 'Stopping all processes and quitting...'
+error: 'An error has occurred. Initiating fallback...'
+
