@@ -62,17 +62,8 @@ def render_ascii_art(string)
   end
 end
 
-
-puts "DISCLAMER! RUBY SHELL SHOULD NOT BE RAN WITH BUNDLE! IT BREAKS A LOT OF THINGS!".blink.red
-
-sleep 1
-
+# Put the warning inside README.md
 puts render_ascii_art(config['ascii'])
-
-sleep 1
-
-puts "If you are executing Ruby Shell with bundle, please \npress Control + D and execute Ruby Shell with Ruby \nor with ./main.rb."
-
 sleep 1
 
 puts config['message'].blink.red

@@ -3,9 +3,10 @@
 A "simple" UNIX shell written in Ruby because why not!
 
 
-I'm kind of new to programing, and did this entire shell within 6 hours. Enjoy!
-=======
+
 I'm kind of new to programing, and did this entire shell update within 6 hours. Enjoy!
+
+Disclamer: This shell shouldn't be ran with Bundle.
 
 
 
