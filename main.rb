@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-# Ruby shell v1.1
+# Ruby shell v1.23b
 require 'readline'
 require 'shellwords'
 require 'socket'
@@ -112,4 +112,6 @@ rescue Interrupt => e
   # Ensuring that the shell still gets executed if interrupted
   puts "^C"
   retry
+rescue NoMethodError => d
+  puts "Quitting...".red
 end

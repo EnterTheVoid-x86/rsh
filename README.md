@@ -1,7 +1,11 @@
 # Ruby Shell
 
 A simple shell written in Ruby because why not!
+
 I'm kind of new to programing, and did this entire shell within 6 hours. Enjoy!
+=======
+I'm kind of new to programing, and did this entire shell update within 6 hours. Enjoy!
+
 
 Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unofficial v1.2 build of it with many added feautres and more. Go check them out, they make awesome stuff, such as cool-tty!
 # What's new
