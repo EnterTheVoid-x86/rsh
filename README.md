@@ -1,6 +1,6 @@
 # Ruby Shell
 
-A simple shell written in Ruby because why not!
+A "simple" UNIX shell written in Ruby because why not!
 
 
 I'm kind of new to programing, and did this entire shell within 6 hours. Enjoy!
