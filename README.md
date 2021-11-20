@@ -20,7 +20,9 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 - Ability to choose from preset prompt arrows, this is done by executing some bash scripts provided in this repository
 - ASCII ART!
 - Prompt Settings Manager
-- So like uhh, a warning message for people trying to run Ruby Shell with bundle
+- ~~So like uhh, a warning message for people trying to run Ruby Shell with bundle~~ Removed
+- Loading Animation on Prompt Settings
+- Easter Eggs in two of the files...
 ## Choices for prompt are:
 - The regular arrow
 - Lambda
