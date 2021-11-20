@@ -1,7 +1,7 @@
 # Ruby Shell
 
 A simple shell written in Ruby because why not!
-<<<<<<< HEAD
+
 
 I'm kind of new to programing, and did this entire shell within 6 hours. Enjoy!
 =======
