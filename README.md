@@ -40,8 +40,7 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 ## How to use
 
 
-Find the directory "ruby-shell/", then go ahead and
-change into that directory and run `./main.rb`
+Run `git clone https://github.com/EnterTheVoid-x86/Ruby-Shell-Unofficial.git && cd Ruby-Shell-Unoffical/ && ./main.rb`
 
 ## Q&A
 
