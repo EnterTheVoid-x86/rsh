@@ -114,4 +114,7 @@ rescue Interrupt => e
   retry
 rescue NoMethodError => d
   puts "Quitting...".red
-end
+rescue SystemExit => f 
+  puts "Quitting...".red
+  sleep 0.2
+end 
