@@ -14,7 +14,7 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 
 ## Recently added
 - Startup script that actually works when you hit "Run" on Replit
-- Exit message upon hitting Control + C, or upon Interrupt
+- Exit message upon hitting Control + D, or upon exiting.
 - New prompt arrow
 - Ability to choose from preset prompt arrows, this is done by executing some bash scripts provided in this repository
 ## Choices are:
