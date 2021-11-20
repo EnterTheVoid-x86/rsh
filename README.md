@@ -18,6 +18,7 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 - New prompt arrow
 - Ability to choose from preset prompt arrows, this is done by executing some bash scripts provided in this repository
 - ## ASCII ART!
+- Prompt Settings Manager
 ## Choices for prompt are:
 - The regular arrow
 - Lambda

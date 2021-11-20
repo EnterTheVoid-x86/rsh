@@ -5,7 +5,7 @@ printf "Setting prompt symbol to ~$, also known as the Fish Shell Prompt. Previe
 sleep 2
 rm -rf config.yml
 printf "prompt: '~$ '
-message: 'Welcome to Ruby Shell v1.24!'
+message: 'Welcome to Ruby Shell v1.25!'
 ascii: 'logo.txt'"  >> config.yml
 printf "\nFinished."
 sleep 1

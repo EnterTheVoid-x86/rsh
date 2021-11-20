@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-# Ruby Shell v1.24
+# Ruby Shell v1.25
 require 'readline'
 require 'shellwords'
 require 'socket'
@@ -55,7 +55,7 @@ class String
   include Colors
 end
 
-# ascii art from ann1kab
+# ascii art from ann1kab, thanks by the way!
 def render_ascii_art(string)
   File.readlines(string) do |line|
     puts line
@@ -66,7 +66,7 @@ puts render_ascii_art(config['ascii'])
 
 puts config['message'].blink.red
 begin
-  while input = Readline.readline("[#{Etc.getlogin}@#{Socket.gethostname}]-(#{Dir.pwd})\n#{config['prompt']}", true).strip # TODO: Fix the broken prompt..
+  while input = Readline.readline("[#{Etc.getlogin}@#{Socket.gethostname}]-(#{Dir.pwd})\n#{config['prompt']}", true).strip # broken prompt is finally fixed
 
     comp = proc do |s|
       directory_list = Dir.glob("#{s}*")
@@ -105,7 +105,7 @@ begin
     end
 
   # Writes the history to a history file
-  # The shell is currently unable to load this file
+  # The shell is currently ABLE to load this file, but only for the commands ran in the current session, once restarted, it doesn't work, and creates a loop of this bug.
 
     begin
       file = File.open("#{workingdir}/history.txt", "a+")
@@ -117,6 +117,7 @@ begin
       file.close unless file.nil?
     end
   end
+  # ah yes, stolen stackoverflow code, my favorite
 rescue Interrupt => e
   # Ensuring that the shell still gets executed if interrupted
   puts "^C"
