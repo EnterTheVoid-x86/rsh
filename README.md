@@ -20,6 +20,7 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 ## Choices are:
 - The regular arrow
 - Lambda
+- ~$ aka the Fish Prompt
 
 +    ~~That's it for now~~
 
