@@ -1,5 +1,5 @@
 #!/bin/bash
-printf "Welcome to Oh My Ruby Shell, the all in one prompt changer."
+printf "Welcome to Oh My RSH, the all in one prompt changer."
   sleep 0.5
 printf "\nPlease select which prompt symbol you want to choose."
   sleep 0.5
