@@ -62,6 +62,7 @@ def render_ascii_art(string)
   end
 end
 
+puts "DISCLAMER! RUBY SHELL SHOULD NOT BE RAN WITH BUNDLE!".blink.red
 puts render_ascii_art(config['ascii'])
 
 puts config['message'].blink.red
