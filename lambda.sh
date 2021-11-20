@@ -5,7 +5,7 @@ printf "Setting prompt arrow to lambda. Preview:
 sleep 1
 rm -rf config.yml
 printf "prompt: 'λ '
-message: 'Welcome to Ruby Shell v1.25!'
+message: 'Welcome to Ruby Shell v1.26!'
 ascii: 'logo.txt'"  >> config.yml
 printf "\nFinished."
 sleep 1

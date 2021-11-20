@@ -17,8 +17,9 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 - Exit message upon hitting Control + D, or upon exiting.
 - New prompt arrow
 - Ability to choose from preset prompt arrows, this is done by executing some bash scripts provided in this repository
-- ## ASCII ART!
+- ASCII ART!
 - Prompt Settings Manager
+- So like uhh, a warning message for people trying to run Ruby Shell with bundle
 ## Choices for prompt are:
 - The regular arrow
 - Lambda
