@@ -33,8 +33,9 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
  - Can run system commands! This is literally the most useful thing about it
  - Written in Ruby!
  - Lightweight
- - Tab to list everything in your current directory, or to show previously used commands with a starting letter, for example, run `ls` and then type "l" and press tab.
- - Did I fix the color? Maybe.
+ - Tab to list everything in your current directory, or to autofill with a letter in the input field.
+ - Basic customization
+ - Did I fix the color?
  - Can run on your grandma's old beaten up Windows XP Computer, if you install Linux on it, if ya know what I mean lmao
  - Sample Text
 
@@ -50,7 +51,7 @@ Run `git clone https://github.com/EnterTheVoid-x86/Ruby-Shell-Unofficial.git && 
 Because why not?
 
 **Can I use this as my main shell?**
-Are you a masochist?
+I don't see the point, but go ahead...
 
 **Are you planing on continuing this project?**
 If I have freetime, and the will to do so, then yes, if not, then no.
