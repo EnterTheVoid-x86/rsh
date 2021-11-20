@@ -40,7 +40,7 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 ## How to use
 
 
-Run `git clone https://github.com/EnterTheVoid-x86/Ruby-Shell-Unofficial.git && cd Ruby-Shell-Unoffical/ && ./main.rb`
+Run `git clone https://github.com/EnterTheVoid-x86/Ruby-Shell-Unofficial.git && cd Ruby-Shell-Unoffical/ && ruby main.rb`
 
 ## Q&A
 
