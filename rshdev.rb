@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-# Ruby Shell v1.28
+# Ruby Shell v1.28 DEVELOPMENT MODE
 require 'readline'
 require 'shellwords'
 require 'socket'
@@ -29,7 +29,7 @@ options = {}
 OptionParser.new do |opts|
   opts.banner = "Usage: rsh [options]"
 
-  opts.on("- ./rshdev.rb", "devmode", "Run with dev mode") do |v|
+  opts.on("- ./rsh.rb dev", "devmode", "Run with dev mode") do |v|
     options[:verbose] = v
   end
 end.parse!
@@ -80,15 +80,20 @@ def render_ascii_art(string)
 end
 
 # Put the warning inside README.md
+puts "46 55 4e 43 54 49 4f 4e 20 41 53 43 49 49 5f 52 45 4e 44 45 52 INSTRUCTION CALLED"
 puts render_ascii_art(config['ascii'])
 sleep 1
 
+puts "46 55 4e 43 2e 20 57 45 4c 43 4f 4d 45 CALLED"
 puts config['message'].blink.red
 sleep 0.7
-puts "GitHub: EnterTheVoid-x86/Ruby-Shell-Unofficial".blink.green
+puts "Maintained in: EnterTheVoid-x86/Ruby-Shell-Unofficial".blink.green
 sleep 0.7
-puts "Maintained by ^--- that guy".blink.green
+puts "Modules/colors.rb loaded.".blink.red
 sleep 0.7
+puts "Dev mode is enabled.".blink.red
+sleep 0.7
+
 begin
   while input = Readline.readline("[#{Etc.getlogin}@#{Socket.gethostname}]-(#{Dir.pwd})\n#{config['prompt']}", true).strip # broken prompt is finally fixed
 
@@ -136,7 +141,8 @@ begin
       file.write("#{Readline::HISTORY.to_a.last}\n")
     rescue IOError => e
       #some error occur, dir not writable etc.
-      puts "Failed to open file."
+       puts exception.backtrace
+       raise 
     ensure
       file.close unless file.nil?
     end
@@ -144,12 +150,12 @@ begin
   # ah yes, stolen stackoverflow code, my favorite
 rescue Interrupt => e
   # Ensuring that the shell still gets executed if interrupted
-  puts "^C"
+  puts "Interrupt Called"
   retry
 rescue NoMethodError => d
-  puts "Quitting...".red
-  sleep 0.2
+  puts exception.backtrace
+  raise
 rescue SystemExit => f 
-  puts "Quitting...".red
-  sleep 0.2
+  puts exception.backtrace
+  raise
 end
