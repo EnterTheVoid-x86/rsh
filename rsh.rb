@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-# Ruby Shell v1.29
+# Ruby Shell v1.30
 require 'readline'
 require 'shellwords'
 require 'socket'
@@ -90,7 +90,7 @@ sleep 0.7
 puts "Maintained by ^--- that guy".blink.green
 sleep 0.7
 begin
-  while input = Readline.readline("[#{Etc.getlogin}@#{Socket.gethostname}]-(#{Dir.pwd})\n#{config['prompt']}", true).strip # broken prompt is finally fixed
+  while input = Readline.readline("#{Etc.getlogin}@#{Socket.gethostname}:~#{Dir.pwd} #{config['prompt']}", true).strip # broken prompt is finally fixed
 
     comp = proc do |s|
       directory_list = Dir.glob("#{s}*")
