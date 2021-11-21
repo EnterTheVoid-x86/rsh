@@ -1,4 +1,4 @@
-# Ruby Shell
+# Ruby Shell v1.28
 
 A "simple" UNIX shell written in Ruby because why not!
 
