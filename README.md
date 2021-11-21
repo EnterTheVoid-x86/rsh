@@ -1,4 +1,4 @@
-# Ruby Shell
+# Ruby Shell v1.28
 
 A "simple" UNIX shell written in Ruby because why not!
 
@@ -10,7 +10,7 @@ Disclamer: This shell shouldn't be ran with Bundle.
 
 
 
-Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unofficial v1.2 build of it with many added feautres and more. Go check them out, they make awesome stuff, such as cool-tty!
+Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unofficial modified fork of it with many added feautres and more. Go check them out, they make awesome stuff, such as cool-tty! Oh and yes, this might be PR'd.
 # What's new
 
 ## Recently added
