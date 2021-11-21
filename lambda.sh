@@ -6,7 +6,7 @@ printf "Setting prompt arrow to lambda. Preview:
 sleep 1
 rm -rf config.yml
 i=1
-sp="/-\|"
+sp="/-\|_"
 echo -n ' '
 while [ $SECONDS -lt $end ]
 do

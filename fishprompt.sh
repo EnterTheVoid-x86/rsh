@@ -6,7 +6,7 @@ printf "Setting prompt symbol to ~$, also known as the Fish Shell Prompt. Previe
 sleep 2
 rm -rf config.yml
 i=1
-sp="/-\|"
+sp="/-\|_"
 echo -n ' '
 while [ $SECONDS -lt $end ]
 do
