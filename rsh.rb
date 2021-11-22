@@ -6,7 +6,6 @@ require 'shellwords'
 require 'socket'
 require 'etc'
 require "yaml"
-require 'optparse'
 
 
 
@@ -25,17 +24,6 @@ def system(command)
   Process.wait pid
 end
 
-options = {}
-OptionParser.new do |opts|
-  opts.banner = "Usage: rsh [options]"
-
-  opts.on("- ./rshdev.rb", "devmode", "Run with dev mode") do |v|
-    options[:verbose] = v
-  end
-end.parse!
-
-p options
-p ARGV
 
 
 def print_exception(exception, explicit)
