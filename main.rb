@@ -6,6 +6,6 @@ class String
   include Colors
 end
 
-puts "Loading Ruby Shell v1.30...".blink.red
+puts "Loading Ruby Shell v1.31...".blink.red
 sleep 0.5
 require_relative 'rsh.rb'

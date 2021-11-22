@@ -13,7 +13,7 @@ do
     printf "\b${sp:i++%${#sp}:1}"
 done
 printf "prompt: '↳ '
-message: 'Welcome to Ruby Shell v1.30!'
+message: 'Welcome to Ruby Shell v1.31!'
 ascii: 'logo.txt'"  >> config.yml
 printf "\nFinished."
 sleep 1

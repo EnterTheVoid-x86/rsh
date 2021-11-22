@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-# Ruby Shell v1.30
+# Ruby Shell v1.31
 require 'readline'
 require 'shellwords'
 require 'socket'
@@ -89,6 +89,7 @@ begin
       end
     end
 
+
     Readline.completion_append_character = " "
     Readline.completion_proc = comp
 
@@ -115,6 +116,7 @@ begin
         print_exception(e, true)
       end
     end
+    
 
   # Writes the history to a history file
   # The shell is currently ABLE to load this file, but only for the commands ran in the current session, once restarted, it doesn't work, and creates a loop of this bug.
@@ -122,7 +124,7 @@ begin
     begin
       file = File.open("#{workingdir}/history.txt", "a+")
       file.write("#{Readline::HISTORY.to_a.last}\n")
-    rescue IOError => e
+    rescue IOError => h
       #some error occur, dir not writable etc.
       puts "Failed to open file."
     ensure
@@ -130,14 +132,22 @@ begin
     end
   end
   # ah yes, stolen stackoverflow code, my favorite
+
 rescue Interrupt => e
   # Ensuring that the shell still gets executed if interrupted
   puts "^C"
   retry
 rescue NoMethodError => d
-  puts "Quitting...".red
+  printf "\nQuitting...".red
+  sleep 1
+  puts "\e[H\e[2J"
   sleep 0.2
 rescue SystemExit => f 
-  puts "Quitting...".red
+  printf "\nQuitting...".red
+  sleep 1
+  puts "\e[H\e[2J"
   sleep 0.2
+rescue StandardError => g
+  puts "rsh: invalid quote"
+  retry
 end
