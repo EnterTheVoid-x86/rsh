@@ -1,4 +1,4 @@
-# Ruby Shell v1.28
+# Ruby Shell v1.30
 
 A "simple" UNIX shell written in Ruby because why not!
 
@@ -24,6 +24,8 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 - Loading Animation on Prompt Settings
 - Easter Eggs in three of the files...
 - Development mode (rshdev.rb)
+- Prompt interface completely redone.
+- Not added yet, but upcoming, custom prompt design
 ## Choices for prompt are:
 - The regular arrow
 - Lambda
@@ -36,6 +38,8 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 ## Features
 
  - A semi working history ~~only works as long as the shell session is running~~
+ - Dev Mode
+ - Joe biden
  - Can run system commands! This is literally the most useful thing about it
  - Written in Ruby!
  - Lightweight
@@ -51,7 +55,7 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 
 Run `git clone https://github.com/EnterTheVoid-x86/Ruby-Shell-Unofficial.git && cd Ruby-Shell-Unoffical/ && ruby main.rb`
 **OR**
-Go to .[this website](https://replit.com/@vansamssecret/Ruby-Shell-v124?v=1) in your browser, it's easier **AND** you don't take up any of your hard drive space. =)
+Go to .[this website](https://replit.com/@vansamssecret/Ruby-Shell-v130?v=1) in your browser, it's easier **AND** you don't take up any of your hard drive space. =)
 ## Q&A
 
 **Why?**
