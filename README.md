@@ -1,4 +1,4 @@
-# Ruby Shell v1.30
+# Ruby Shell v1.31
 
 A "simple" UNIX shell written in Ruby because why not!
 
@@ -26,6 +26,7 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 - Development mode (rshdev.rb)
 - Prompt interface completely redone.
 - Not added yet, but upcoming, custom prompt design
+- edited logo
 ## Choices for prompt are:
 - The regular arrow
 - Lambda

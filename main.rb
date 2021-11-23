@@ -8,4 +8,4 @@ end
 
 puts "Loading Ruby Shell v1.31...".blink.red
 sleep 0.5
-require_relative 'rsh.rb'
+exec "ruby rsh"
