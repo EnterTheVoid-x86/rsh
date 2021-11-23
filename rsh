@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-# Ruby Shell v1.31
+# Ruby Shell v1.32
 require 'readline'
 require 'shellwords'
 require 'socket'
@@ -46,6 +46,22 @@ builtin = {
   'exec' => lambda { |*com| exec *com },
   'history' => lambda {
     puts Readline::HISTORY.to_a
+  },
+  'amongus' => lambda {
+    puts "in real life".blink.red
+    sleep 0.4
+    puts "sus".blink.red
+    sleep 0.4
+    puts "sus".blink.red
+  },
+  'lambda' => lambda {
+    puts "No, it's not a reference to Half-Life."
+  },
+  'cls' => lambda {
+    puts "\e[H\e[2J"
+  },
+  'beep' => lambda {
+    puts 7.chr, "Beep!"
   },
   'set' => lambda { |args|
    key, value = args.split('=')

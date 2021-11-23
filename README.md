@@ -1,4 +1,4 @@
-# Ruby Shell v1.31
+# Ruby Shell v1.32
 
 A "simple" UNIX shell written in Ruby because why not!
 
@@ -22,7 +22,7 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 - Prompt Settings Manager
 - ~~So like uhh, a warning message for people trying to run Ruby Shell with bundle~~ Removed
 - Loading Animation on Prompt Settings
-- Easter Eggs in three of the files...
+- Easter Eggs in some of the files...
 - Development mode (rshdev.rb)
 - Prompt interface completely redone.
 - Not added yet, but upcoming, custom prompt design

@@ -103,3 +103,34 @@ irb
 irb
 irb
 irb
+cd /
+clear
+bash lambda.sh
+bash lambda.sh
+cd ~
+cd Ruby-Shell-v131 R
+cd Ruby-Shell-v131
+cd /
+cd/
+cd /
+clear
+history
+history
+among us
+amongus
+clear
+amongus
+ls amongus
+lambda
+cls
+beeep
+beep
+beep
+beep
+beep
+lambda
+cls
+beep
+beep
+beep
+beep
