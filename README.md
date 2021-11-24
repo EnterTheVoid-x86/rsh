@@ -1,4 +1,4 @@
-# Ruby Shell v1.32
+# Ruby Shell v1.33
 
 A "simple" UNIX shell written in Ruby because why not!
 
@@ -15,7 +15,7 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 
 ## Recently added
 - Startup script that actually works when you hit "Run" on Replit
-- Exit message upon hitting Control + D, or upon exiting.
+- Exit message upon hitting Control + D, or upon exiting
 - New prompt arrow
 - Ability to choose from preset prompt arrows, this is done by executing some bash scripts provided in this repository
 - ASCII ART!
@@ -27,6 +27,7 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 - Prompt interface completely redone.
 - Not added yet, but upcoming, custom prompt design
 - edited logo
+- Date and time commands
 ## Choices for prompt are:
 - The regular arrow
 - Lambda
@@ -45,10 +46,12 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
  - Written in Ruby!
  - Lightweight
  - Tab to list everything in your current directory, or to autofill with a letter in the input field.
+ - Date and time commands
  - Basic customization
  - Did I fix the color?
  - Can run on your grandma's old beaten up Windows XP Computer, if you install Linux on it, if ya know what I mean lmao
  - Sample Text
+ - Eggs
 
 
 ## How to use
@@ -56,7 +59,7 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 
 Run `git clone https://github.com/EnterTheVoid-x86/Ruby-Shell-Unofficial.git && cd Ruby-Shell-Unoffical/ && ruby main.rb`
 **OR**
-Go to .[this website](https://replit.com/@vansamssecret/Ruby-Shell-v130?v=1) in your browser, it's easier **AND** you don't take up any of your hard drive space. =)
+Go to .[this website](https://replit.com/@vansamssecret/Ruby-Shell-v133?v=1) in your browser, it's easier **AND** you don't take up any of your hard drive space. =)
 ## Q&A
 
 **Why?**

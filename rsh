@@ -1,11 +1,15 @@
 #!/usr/bin/env ruby
 
-# Ruby Shell v1.32
+# Ruby Shell v1.33
 require 'readline'
 require 'shellwords'
 require 'socket'
 require 'etc'
 require "yaml"
+
+
+time = Time.new
+
 
 
 
@@ -63,6 +67,34 @@ builtin = {
   'beep' => lambda {
     puts 7.chr, "Beep!"
   },
+  'inf' => lambda {
+    puts "Ruby Shell v1.33".blink.red
+    printf "Powered by Ruby v3.03".blink.red
+    puts "\nMaintained by", "EnterTheVoid-x86".blink.green
+    printf "\nCreated 2020, current version was released on November 24th, 2021.\n".blink.magenta
+  },
+  'info' => lambda {
+    puts "Ruby Shell v1.33".blink.red
+    printf "Powered by Ruby v3.03".blink.red
+    puts "\nMaintained by", "EnterTheVoid-x86".blink.green
+    printf "\nCreated 2020, current version was released on November 24th, 2021.\n".blink.magenta
+  },
+  'time' => lambda {
+    puts "The time is:", time.strftime("%I:%M %p.") 
+  },
+  'date' => lambda {
+    puts "Today is:", time.strftime("%m/%d/%Y.") 
+  },
+  'unixtime' => lambda {
+    puts "Unix time as of right now is:", time.strftime("%s.")
+  },
+  'europedate' => lambda {
+    puts time.strftime("%d/%m/%Y")
+  },
+  # For all you Europeans out there, here's your dates in day, month, year format
+  '24hr' => lambda {
+    puts time.strftime("%k:%M")
+  }, # The time doesn't get a break either.
   'set' => lambda { |args|
    key, value = args.split('=')
    ENV[key] = value
@@ -94,7 +126,7 @@ sleep 0.7
 puts "Maintained by ^--- that guy".blink.green
 sleep 0.7
 begin
-  while input = Readline.readline("#{Etc.getlogin}@#{Socket.gethostname}:~#{Dir.pwd} #{config['prompt']}", true).strip # broken prompt is finally fixed
+  while input = Readline.readline("#{Etc.getlogin}@#{Socket.gethostname}:~#{Dir.pwd} #{config['prompt']}", true).strip # NVM, need to fix broken prompt
 
     comp = proc do |s|
       directory_list = Dir.glob("#{s}*")
