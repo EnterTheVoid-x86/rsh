@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-# Ruby Shell v1.33
+# Ruby Shell v1.34
 require 'readline'
 require 'shellwords'
 require 'socket'
@@ -98,6 +98,16 @@ builtin = {
   'set' => lambda { |args|
    key, value = args.split('=')
    ENV[key] = value
+  },
+  'help' => lambda {
+    puts "rsh: commands:"
+    printf "\ninf, info: prints info about the shell"
+    printf "\ntime, 24hr: prints the current time"
+    printf "\ndate, europedate: prints the current date"
+    printf "\ncls, clear: clears the screen"
+    printf "\nunixtime: prints the current time in unix timestamps"
+    printf "\nbeep: beep beep motherfu-\n"
+    printf "all regular bash commands are also in the shell, such as cd and exit.\n"
   }
 }
 
