@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 
 # Ruby Shell v1.34
+# Written by Stargirl-chan
+# Modified and maintained by EnterTheVoid-x86
 require 'readline'
 require 'shellwords'
 require 'socket'
