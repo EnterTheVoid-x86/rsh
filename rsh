@@ -109,10 +109,13 @@ builtin = {
     printf "\ncls, clear: clears the screen"
     printf "\nunixtime: prints the current time in unix timestamps"
     printf "\nbeep: beep beep motherfu-\n"
-    printf "all regular bash commands are also in the shell, such as cd and exit.\n"
+    printf "thanksgiving: oh boy, thanksgiving 🦃 is a great holiday to come together and discuss what we all are thankful for! this command says what thanksgiving is.".brown
+    printf "\nall regular bash commands are also in the shell, such as cd and exit.\n"
+  },
+  'thanksgiving' => lambda {
+    puts "\nThanksgiving 🦃 is a national holiday celebrated on various dates in the United States, Canada, Grenada, Saint Lucia, and Liberia.\nIt began as a day of giving thanks and sacrifice for the blessing of the harvest and of the preceding year.\nSimilarly named festival holidays occur in Germany and Japan.\nThanksgiving is celebrated on the second Monday of October in Canada and on the fourth Thursday of November in the United States and around the same part of the year in other places.\nAlthough Thanksgiving has historical roots in religious and cultural traditions, it has long been celebrated as a secular holiday as well.".brown, "\nRuby Shell's developers are thankful for a lot of things in their life, so we wanted to spread the message on what it is to other countries. Thank you for using Ruby Shell.\n".blink.red
   }
 }
-
 # Loads the color module on class String
 # Used to color strings ¯\_(ツ)_/¯
 
