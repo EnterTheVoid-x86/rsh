@@ -1,4 +1,4 @@
-# Ruby Shell v1.33
+# Ruby Shell v1.34
 
 A "simple" UNIX shell written in Ruby because why not!
 
@@ -28,6 +28,7 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 - Not added yet, but upcoming, custom prompt design
 - edited logo
 - Date and time commands
+- help command
 ## Choices for prompt are:
 - The regular arrow
 - Lambda
@@ -52,6 +53,7 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
  - Can run on your grandma's old beaten up Windows XP Computer, if you install Linux on it, if ya know what I mean lmao
  - Sample Text
  - Eggs
+ - Help command
 
 
 ## How to use
