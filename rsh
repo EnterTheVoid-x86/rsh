@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-# Ruby Shell v1.34
+# Ruby Shell v1.35
 # Written by Stargirl-chan
 # Modified and maintained by EnterTheVoid-x86
 require 'readline'
@@ -137,6 +137,8 @@ puts "GitHub: EnterTheVoid-x86/Ruby-Shell-Unofficial".blink.green
 sleep 0.7
 puts "Maintained by ^--- that guy".blink.green
 sleep 0.7
+puts "Happy Thanksgiving! 🦃".blink.brown
+sleep 0.2
 begin
   while input = Readline.readline("#{Etc.getlogin}@#{Socket.gethostname}:~#{Dir.pwd} #{config['prompt']}", true).strip # NVM, need to fix broken prompt
 
