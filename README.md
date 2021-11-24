@@ -59,7 +59,7 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 
 Run `git clone https://github.com/EnterTheVoid-x86/Ruby-Shell-Unofficial.git && cd Ruby-Shell-Unoffical/ && ruby main.rb`
 **OR**
-Go to .[this website](https://replit.com/@vansamssecret/Ruby-Shell-v133?v=1) in your browser, it's easier **AND** you don't take up any of your hard drive space. =)
+Go to .[this website](https://replit.com/@vansamssecret/Ruby-Shell-v130?v=1) in your browser, it's easier **AND** you don't take up any of your hard drive space. =)
 ## Q&A
 
 **Why?**
