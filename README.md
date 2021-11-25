@@ -29,7 +29,7 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 - edited logo
 - Date and time commands
 - help command
-- !!Thanksgiving suprise message~~
+- ~~Thanksgiving suprise message~~
 ## Choices for prompt are:
 - The regular arrow
 - Lambda
