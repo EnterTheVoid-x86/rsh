@@ -198,3 +198,51 @@ thanksgiving
 thankgsiving
 thanksgiving
 help
+thanksgiving
+gem 
+cls
+beep
+hepl
+help
+tar -xcvz
+tar --xcvz
+tar --xvz
+tar 
+curl
+curl https://www.purebasic.com/download/purebasic-demo_x64.tar.gz
+curl https://www.purebasic.com/download/
+ls
+ls
+sls
+sls
+ls
+ls
+git clone https://www.purebasic.com/download/purebasic-demo_x64.tar.gz
+git clone https://github.com/QB64Team/qb64/releases/download/v2.0.2/qb64_2021-11-07-02-59-19_4d85302_lnx.tar.gz
+git clone https://github.com/QB64Team/qb64/releases/download/v2.0.2/qb64_2021-11-07-02-59-19_4d85302_lnx.tar.gz
+curl https://github.com/QB64Team/qb64/releases/download/v2.0.2/qb64_2021-11-07-02-59-19_4d85302_lnx.tar.gz
+git clone https://github.com/QB64Team/qb64
+cd qb64
+ls
+ls
+l
+ls
+ls
+cd internal
+ls
+cd c
+ls
+cd ..
+cd ..
+make
+cd internal 
+cd c
+make
+cd ~
+curl -LJQ https://github.com/QB64Team/qb64/releases/download/v2.0.2/qb64_2021-11-07-02-59-19_4d85302_lnx.tar.gz
+curl -LJQ https://github.com/QB64Team/qb64/releases/download/v2.0.2/qb64_2021-11-07-02-59-19_4d85302_lnx.tar.gz
+curl -LJO https://github.com/QB64Team/qb64/releases/download/v2.0.2/qb64_2021-11-07-02-59-19_4d85302_lnx.tar.gz
+tar qb64_2021-11-07-02-59-19_4d85302_lnx.tar.gz 
+tar -xf https://github.com/QB64Team/qb64/releases/download/v2.0.2/qb64_2021-11-07-02-59-19_4d85302_lnx.tar.gz
+;
+;

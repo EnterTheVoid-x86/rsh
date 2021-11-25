@@ -114,6 +114,10 @@ builtin = {
   },
   'thanksgiving' => lambda {
     puts "\nThanksgiving 🦃 is a national holiday celebrated on various dates in the United States, Canada, Grenada, Saint Lucia, and Liberia.\nIt began as a day of giving thanks and sacrifice for the blessing of the harvest and of the preceding year.\nSimilarly named festival holidays occur in Germany and Japan.\nThanksgiving is celebrated on the second Monday of October in Canada and on the fourth Thursday of November in the United States and around the same part of the year in other places.\nAlthough Thanksgiving has historical roots in religious and cultural traditions, it has long been celebrated as a secular holiday as well.".brown, "\nRuby Shell's developers are thankful for a lot of things in their life, so we wanted to spread the message on what it is to other countries. Thank you for using Ruby Shell.\n".blink.red
+  },
+  ';' => lambda {
+    puts "Dude, get out of here, this isn't Java." 
+    sleep 1
   }
 }
 # Loads the color module on class String
@@ -190,13 +194,13 @@ begin
       file = File.open("#{workingdir}/history.txt", "a+")
       file.write("#{Readline::HISTORY.to_a.last}\n")
     rescue IOError => h
-      #some error occur, dir not writable etc.
+      # File not given perms, etc.
       puts "Failed to open file."
     ensure
       file.close unless file.nil?
     end
   end
-  # ah yes, stolen stackoverflow code, my favorite
+  # screw stackoverflow lol
 
 rescue Interrupt => e
   # Ensuring that the shell still gets executed if interrupted
