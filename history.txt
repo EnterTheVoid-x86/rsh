@@ -246,3 +246,12 @@ tar qb64_2021-11-07-02-59-19_4d85302_lnx.tar.gz
 tar -xf https://github.com/QB64Team/qb64/releases/download/v2.0.2/qb64_2021-11-07-02-59-19_4d85302_lnx.tar.gz
 ;
 ;
+calculator
+calc
+chmod +x calc
+chmod +x calc
+calc
+calc
+calc
+calc
+NUCLE198511

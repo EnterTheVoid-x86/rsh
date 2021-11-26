@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-# Ruby Shell v1.35
+# Ruby Shell v1.36
 # Written by Stargirl-chan
 # Modified and maintained by EnterTheVoid-x86
 require 'readline'
@@ -76,10 +76,10 @@ builtin = {
     printf "\nCreated 2020, current version was released on November 24th, 2021.\n".blink.magenta
   },
   'info' => lambda {
-    puts "Ruby Shell v1.33".blink.red
+    puts "Ruby Shell v1.36".blink.red
     printf "Powered by Ruby v3.03".blink.red
     puts "\nMaintained by", "EnterTheVoid-x86".blink.green
-    printf "\nCreated 2020, current version was released on November 24th, 2021.\n".blink.magenta
+    printf "\nCreated 2020, current version was released on November 26th, 2021.\n".blink.magenta
   },
   'time' => lambda {
     puts "The time is:", time.strftime("%I:%M %p.") 
@@ -109,15 +109,39 @@ builtin = {
     printf "\ncls, clear: clears the screen"
     printf "\nunixtime: prints the current time in unix timestamps"
     printf "\nbeep: beep beep motherfu-\n"
-    printf "thanksgiving: oh boy, thanksgiving 🦃 is a great holiday to come together and discuss what we all are thankful for! this command says what thanksgiving is.".brown
-    printf "\nall regular bash commands are also in the shell, such as cd and exit.\n"
-  },
-  'thanksgiving' => lambda {
-    puts "\nThanksgiving 🦃 is a national holiday celebrated on various dates in the United States, Canada, Grenada, Saint Lucia, and Liberia.\nIt began as a day of giving thanks and sacrifice for the blessing of the harvest and of the preceding year.\nSimilarly named festival holidays occur in Germany and Japan.\nThanksgiving is celebrated on the second Monday of October in Canada and on the fourth Thursday of November in the United States and around the same part of the year in other places.\nAlthough Thanksgiving has historical roots in religious and cultural traditions, it has long been celebrated as a secular holiday as well.".brown, "\nRuby Shell's developers are thankful for a lot of things in their life, so we wanted to spread the message on what it is to other countries. Thank you for using Ruby Shell.\n".blink.red
+    printf "all regular bash commands are also in the shell, such as cd and exit.\n"
   },
   ';' => lambda {
     puts "Dude, get out of here, this isn't Java." 
     sleep 1
+  },
+  'calc' => lambda {
+    exec("./calc")
+  },
+  'calculator' => lambda {
+    exec("./calc")
+  },
+  'NUCLE198511' => lambda {
+    puts "\e[H\e[2J"
+    sleep 1
+    puts 7.chr 
+    sleep 1
+    puts 7.chr
+    sleep 3
+    puts 7.chr
+    puts "The Wall of Credits".red
+    sleep 2
+    puts "Stargirl-chan, made the shell".red
+    sleep 2
+    puts "EnterTheVoidx86, created the best fork".blink.green
+    sleep 2
+    puts "Ann1kaB, made the ASCII art module".blue
+    sleep 2
+    puts "Thanks for using Ruby Shell.".blink.red
+    sleep 7
+    puts "https://soundcloud.com/nucleus408/".blink.green
+    sleep 2
+    puts "\e[H\e[2J"
   }
 }
 # Loads the color module on class String
@@ -144,8 +168,6 @@ puts "GitHub: EnterTheVoid-x86/Ruby-Shell-Unofficial".blink.green
 sleep 0.7
 puts "Maintained by ^--- that guy".blink.green
 sleep 0.7
-puts "Happy Thanksgiving! 🦃".blink.brown
-sleep 0.2
 begin
   while input = Readline.readline("#{Etc.getlogin}@#{Socket.gethostname}:~#{Dir.pwd} #{config['prompt']}", true).strip # NVM, need to fix broken prompt
 

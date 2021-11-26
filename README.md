@@ -1,10 +1,6 @@
-# Ruby Shell v1.35
+# Ruby Shell v1.36
 
 A "simple" UNIX shell written in Ruby because why not!
-
-
-
-I'm kind of new to programing, and did this entire shell update within 6 hours. Enjoy!
 
 Disclamer: This shell shouldn't be ran with Bundle.
 
@@ -29,7 +25,7 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 - edited logo
 - Date and time commands
 - help command
-- ~~Thanksgiving suprise message~~
+- Calculator
 ## Choices for prompt are:
 - The regular arrow
 - Lambda
@@ -55,6 +51,7 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
  - Sample Text
  - Eggs
  - Help command
+ - Calculator
 
 
 ## How to use
@@ -62,20 +59,20 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 
 Run `git clone https://github.com/EnterTheVoid-x86/Ruby-Shell-Unofficial.git && cd Ruby-Shell-Unoffical/ && ruby main.rb`
 **OR**
-Go to .[this website](https://replit.com/@vansamssecret/Ruby-Shell-v130?v=1) in your browser, it's easier **AND** you don't take up any of your hard drive space. =)
+Go to [this website](https://replit.com/@vansamssecret/Ruby-Shell-v130?v=1) in your browser, it's easier **AND** you don't take up any of your hard drive space. =)
 ## Q&A
 
 **Why?**
-Because why not?
+- Because why not?
 
 **Can I use this as my main shell?**
-I don't see the point, but go ahead...
+- Oh hey look, a fellow masochist!
 
 **Are you planing on continuing this project?**
-If I have freetime, and the will to do so, then yes, if not, then no.
+- If I have freetime, and the will to do so, then yes, if not, then no.
 
 **Who asked these questions?**
-No one. Literally.
+- No one. Literally.
 
 **How did you write this?**
 These two sites helped me creating it:
