@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-# Ruby Shell v1.36
+# Ruby Shell v1.37
 # Written by Stargirl-chan
 # Modified and maintained by EnterTheVoid-x86
 require 'readline'
@@ -70,13 +70,13 @@ builtin = {
     puts 7.chr, "Beep!"
   },
   'inf' => lambda {
-    puts "Ruby Shell v1.33".blink.red
+    puts "Ruby Shell v1.37".blink.red
     printf "Powered by Ruby v3.03".blink.red
     puts "\nMaintained by", "EnterTheVoid-x86".blink.green
     printf "\nCreated 2020, current version was released on November 24th, 2021.\n".blink.magenta
   },
   'info' => lambda {
-    puts "Ruby Shell v1.36".blink.red
+    puts "Ruby Shell v1.37".blink.red
     printf "Powered by Ruby v3.03".blink.red
     puts "\nMaintained by", "EnterTheVoid-x86".blink.green
     printf "\nCreated 2020, current version was released on November 26th, 2021.\n".blink.magenta
@@ -109,6 +109,7 @@ builtin = {
     printf "\ncls, clear: clears the screen"
     printf "\nunixtime: prints the current time in unix timestamps"
     printf "\nbeep: beep beep motherfu-\n"
+    printf "rps, rockpaperscissors: play a game of rock paper scissors\n"
     printf "all regular bash commands are also in the shell, such as cd and exit.\n"
   },
   ';' => lambda {
@@ -142,6 +143,45 @@ builtin = {
     puts "https://soundcloud.com/nucleus408/".blink.green
     sleep 2
     puts "\e[H\e[2J"
+  },
+  'rps' => lambda {
+    puts "Rock Paper Scissors"
+
+#scores
+compScore = 0
+humanScore = 0
+
+until compScore == 5 || humanScore == 5
+
+    puts "Select your weapon. Rock, paper or scissors?"
+
+    human = gets.chomp.downcase
+    comp = ["rock", "paper", "scissors"].sample
+
+    #human wins
+    if (human == "rock" && comp == "scissors") || (human == "scissors" && comp == "paper") || (human == "paper" && comp == "rock")
+        p "You won!"
+        humanScore += 1
+
+    #draws
+    elsif (human == "rock" && comp == "rock") || (human == "paper" && comp == "paper") || (human == "scissors" && comp == "scissors")
+        p "Draw! No point awarded"
+
+    #computer wins
+    else compScore += 1
+        p "You lose."   
+    end
+
+    #Resulted Scores
+    p "Human Score: #{humanScore}"
+    p "Computer Score: #{compScore}"
+
+    #Resulted Choices
+    p "Human chose: #{human}"
+    p "Computer chose: #{comp}"
+end
+    #Tell who wins
+    p humanScore > compScore ? ("YOU WIN!") : ("COMPUTER WINS!.")
   }
 }
 # Loads the color module on class String

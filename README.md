@@ -1,4 +1,4 @@
-# Ruby Shell v1.36
+# Ruby Shell v1.37
 
 A "simple" UNIX shell written in Ruby because why not!
 
@@ -26,6 +26,7 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 - Date and time commands
 - help command
 - Calculator
+- rock paper scissors
 ## Choices for prompt are:
 - The regular arrow
 - Lambda
