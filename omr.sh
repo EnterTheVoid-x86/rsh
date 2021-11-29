@@ -9,6 +9,8 @@ printf "\n2: Lambda"
   sleep 0.5
 printf "\n3: ~$ aka Fish Prompt"
   sleep 0.5
+printf "\n4: Spock"
+sleep 0.5
 printf "\nPress Control + C to exit."
   read promptsettings
 
@@ -24,8 +26,12 @@ elif [ $promptsettings == 3 ]
   then
     sleep 0.5   
     exec bash fishprompt.sh
-else 
-  printf "\nSorry, that wasn't a choice. Please select from one of the choices again."
+elif [ $promptsettings == 4 ]
+  then
+    sleep 0.5
+    exec bash spock.sh
+else
+printf "\nSorry, that wasn't a choice. Please select from one of the choices again."
   sleep 0.5
   exec bash OhMyRS.sh
 fi
