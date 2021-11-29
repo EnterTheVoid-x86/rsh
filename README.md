@@ -21,7 +21,6 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 - Easter Eggs in some of the files...
 - Development mode (rshdev.rb)
 - Prompt interface completely redone.
-- Not added yet, but upcoming, custom prompt design
 - edited logo
 - Date and time commands
 - help command

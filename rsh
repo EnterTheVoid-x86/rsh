@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-# Ruby Shell v1.37
+# Spock v1.00
 # Written by Stargirl-chan
 # Modified and maintained by EnterTheVoid-x86
 require 'readline'
@@ -70,13 +70,13 @@ builtin = {
     puts 7.chr, "Beep!"
   },
   'inf' => lambda {
-    puts "Ruby Shell v1.37".blink.red
+    puts "Spock v1.00".blink.red
     printf "Powered by Ruby v3.03".blink.red
     puts "\nMaintained by", "EnterTheVoid-x86".blink.green
     printf "\nCreated 2020, current version was released on November 24th, 2021.\n".blink.magenta
   },
   'info' => lambda {
-    puts "Ruby Shell v1.37".blink.red
+    puts "Spock v1.00".blink.red
     printf "Powered by Ruby v3.03".blink.red
     puts "\nMaintained by", "EnterTheVoid-x86".blink.green
     printf "\nCreated 2020, current version was released on November 26th, 2021.\n".blink.magenta
@@ -117,10 +117,10 @@ builtin = {
     sleep 1
   },
   'calc' => lambda {
-    exec("./calc")
+    exec("./calc && ruby rsh")
   },
   'calculator' => lambda {
-    exec("./calc")
+    exec("./calc && ruby rsh")
   },
   'NUCLE198511' => lambda {
     puts "\e[H\e[2J"
@@ -138,7 +138,7 @@ builtin = {
     sleep 2
     puts "Ann1kaB, made the ASCII art module".blue
     sleep 2
-    puts "Thanks for using Ruby Shell.".blink.red
+    puts "Thanks for using Spock.".blink.red
     sleep 7
     puts "https://soundcloud.com/nucleus408/".blink.green
     sleep 2
