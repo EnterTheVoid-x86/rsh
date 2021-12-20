@@ -256,3 +256,26 @@ calc
 calc
 NUCLE198511
 help
+i3
+pkill
+pkill fluxbox
+pkill fluxbox
+pkill fluxbox
+pkill
+fdgdfg
+dh
+gf
+pkill i3
+fg
+pkill x
+i3
+pkill x
+i3
+pkill flu
+pkill fluxbox
+i4
+i3
+pkill i3
+pkill x
+pkill fluxbox
+i3

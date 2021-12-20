@@ -1,0 +1,88 @@
+#!/bin/bash
+printf "Welcome to Oh My RSH, the all in one prompt changer."
+  sleep 0.5
+printf "\nPlease select which prompt symbol you want to choose."
+  sleep 0.5
+printf "\n1: Default"
+  sleep 0.5
+printf "\n2: Lambda"
+  sleep 0.5
+printf "\n3: ~$ aka Fish Prompt"
+  sleep 0.5
+printf "\nPress Control + C to exit."
+  read promptsettings
+
+if [ $promptsettings == 1 ]
+  then
+    sleep 0.5
+    end=$((SECONDS+3))
+printf "Setting prompt arrow to lambda. Preview: 
+\n[runner@d7bf2abcc65b]-(/home/runner/Ruby-Linux-Shell-1/ruby-shell)
+↳"
+sleep 1
+rm -rf config.yml
+i=1
+sp="/-\|_"
+echo -n ' '
+while [ $SECONDS -lt $end ]
+do
+    printf "\b${sp:i++%${#sp}:1}"
+done
+printf "prompt: '↳ '
+message: 'Welcome to Ruby Shell v1.38!'
+ascii: 'logo.txt'"  >> config.yml
+printf "\nFinished."
+sleep 1
+printf "\n"
+exec ruby main
+elif [ $promptsettings == 2 ]
+  then
+    sleep 0.5
+    end=$((SECONDS+3))
+printf "Setting prompt arrow to lambda. Preview: 
+\n[runner@d7bf2abcc65b]-(/home/runner/Ruby-Linux-Shell-1/ruby-shell)
+λ"
+sleep 1
+rm -rf config.yml
+i=1
+sp="/-\|_"
+echo -n ' '
+while [ $SECONDS -lt $end ]
+do
+    printf "\b${sp:i++%${#sp}:1}"
+done
+printf "prompt: 'λ '
+message: 'Welcome to Ruby Shell v1.38!'
+ascii: 'logo.txt'"  >> config.yml
+printf "\nFinished."
+sleep 1
+printf "\n"
+exec ruby main
+elif [ $promptsettings == 3 ]
+  then
+    sleep 0.5   
+    end=$((SECONDS+3))
+printf "Setting prompt symbol to ~$, also known as the Fish Shell Prompt. Preview: \n
+[runner@d7bf2abcc65b]-(/home/runner/Ruby-Linux-Shell-1/ruby-shell)
+~$"
+sleep 2
+rm -rf config.yml
+i=1
+sp="/-\|_"
+echo -n ' '
+while [ $SECONDS -lt $end ]
+do
+    printf "\b${sp:i++%${#sp}:1}"
+done
+printf "prompt: '~$ '
+message: 'Welcome to Ruby Shell v1.38!'
+ascii: 'logo.txt'"  >> config.yml
+printf "\nFinished."
+sleep 1
+printf "\n"
+exec ruby main
+else 
+  printf "\nSorry, that wasn't a choice. Please select from one of the choices again."
+  sleep 0.5
+  exec ./omr
+fi

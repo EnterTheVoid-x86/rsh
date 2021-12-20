@@ -1,4 +1,4 @@
-# Ruby Shell v1.37
+# Ruby Shell v1.38
 
 A "simple" UNIX shell written in Ruby because why not!
 
@@ -10,23 +10,9 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 # What's new
 
 ## Recently added
-- Startup script that actually works when you hit "Run" on Replit
-- Exit message upon hitting Control + D, or upon exiting
-- New prompt arrow
-- Ability to choose from preset prompt arrows, this is done by executing some bash scripts provided in this repository
-- ASCII ART!
-- Prompt Settings Manager
-- ~~So like uhh, a warning message for people trying to run Ruby Shell with bundle~~ Removed
-- Loading Animation on Prompt Settings
-- Easter Eggs in some of the files...
-- Development mode (rshdev.rb)
-- Prompt interface completely redone.
-- Not added yet, but upcoming, custom prompt design
-- edited logo
-- Date and time commands
-- help command
+- Rock Paper Scissors
 - Calculator
-- rock paper scissors
+- Code optimizations
 ## Choices for prompt are:
 - The regular arrow
 - Lambda
