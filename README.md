@@ -46,7 +46,7 @@ Credits to Stargirl-chan on GitHub for the original rsh. This is an unofficial m
 ## How to use
 
 
-Run `git clone https://github.com/EnterTheVoid-x86/Ruby-Shell-Unofficial.git && cd Ruby-Shell-Unoffical/ && ruby main.rb`
+Run `git clone https://github.com/EnterTheVoid-x86/rsh.git && cd rsh/ && ruby main`
 **OR**
 Go to [this website](https://replit.com/@Amythest/rsh-v139?v=1) in your browser, it's easier **AND** you don't take up any of your hard drive space. =)
 ## Q&A
