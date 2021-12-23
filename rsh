@@ -124,7 +124,7 @@ builtin = {
     printf "\ndate, europedate: Prints the current date"
     printf "\ncls, clear: Clears the screen"
     printf "\nunixtime: Prints the current time in unix timestamps"
-    printf "\ncalc, calculator: self-explanitory.
+    printf "\ncalc, calculator: self-explanitory."
     printf "\nbeep: It beeps.\n"
     printf "rps, rockpaperscissors: Play a game of rock paper scissors\n"
     printf "ver, version: Prints shell version\n"
