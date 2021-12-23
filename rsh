@@ -124,6 +124,7 @@ builtin = {
     printf "\ndate, europedate: Prints the current date"
     printf "\ncls, clear: Clears the screen"
     printf "\nunixtime: Prints the current time in unix timestamps"
+    printf "\ncalc, calculator: self-explanitory.
     printf "\nbeep: It beeps.\n"
     printf "rps, rockpaperscissors: Play a game of rock paper scissors\n"
     printf "ver, version: Prints shell version\n"
@@ -141,10 +142,10 @@ builtin = {
     puts "rsh: syntax error near unexpected token '|'"
   },
   'calc' => lambda {
-    exec("./calc")
+    system "ruby modules/calc.rb"
   },
   'calculator' => lambda {
-    exec("./calc")
+    system "ruby modules/calc.rb"
   },
   'NUCLE198511' => lambda {
     puts "\e[H\e[2J"
