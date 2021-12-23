@@ -2,9 +2,4 @@
 # Keep in mind this history.txt will only be usable 
 # during your current session, as you can not use 
 # previous commands if you restart the shell. 
-# Sorry about that!rps
-rps
-d
-d
-rps
-d
+# Sorry about that!
