@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-# Ruby Shell v1.38
+# rsh v1.39
 # Written by Stargirl-chan
 # Modified and maintained by EnterTheVoid-x86
 require 'readline'
@@ -19,6 +19,8 @@ require_relative 'modules/colors.rb'
 
 config = YAML.load_file('config.yml')
 workingdir = Dir.pwd
+
+logo = YAML.load_file('logo.yml')
 
 # Defines the system function to call system commands
 
@@ -70,16 +72,30 @@ builtin = {
     puts 7.chr, "Beep!"
   },
   'inf' => lambda {
-    puts "Ruby Shell v1.37".blink.red
+    puts "rsh v1.39".blink.red
     printf "Powered by Ruby v3.03".blink.red
     puts "\nMaintained by", "EnterTheVoid-x86".blink.green
-    printf "\nCreated 2020, current version was released on November 24th, 2021.\n".blink.magenta
+    printf "\nCreated 2020, current version was released on December 23, 2021.\n".blink.magenta
   },
   'info' => lambda {
-    puts "Ruby Shell v1.37".blink.red
+    puts "rsh v1.39".blink.red
     printf "Powered by Ruby v3.03".blink.red
     puts "\nMaintained by", "EnterTheVoid-x86".blink.green
-    printf "\nCreated 2020, current version was released on November 26th, 2021.\n".blink.magenta
+    printf "\nCreated 2020, current version was released on December 23, 2021.\n".blink.magenta
+  },
+  'ver' => lambda {
+    puts "rsh v1.39".blink.red
+  },
+  'version' => lambda {
+    puts "rsh v1.39".blink.red
+  },
+  'disable_logo' => lambda {
+    puts "Logo is now disabled."
+    system "echo 'logo_enabled: false' > logo.yml"
+  },
+  'enable_logo' => lambda {
+    puts "Logo is now enabled."
+    system "echo 'logo_enabled: true' > logo.yml"
   },
   'time' => lambda {
     puts "The time is:", time.strftime("%I:%M:%S %p.") 
@@ -103,18 +119,26 @@ builtin = {
   },
   'help' => lambda {
     puts "rsh: commands:"
-    printf "\ninf, info: prints info about the shell"
-    printf "\ntime, 24hr: prints the current time"
-    printf "\ndate, europedate: prints the current date"
-    printf "\ncls, clear: clears the screen"
-    printf "\nunixtime: prints the current time in unix timestamps"
-    printf "\nbeep: beep beep motherfu-\n"
-    printf "rps, rockpaperscissors: play a game of rock paper scissors\n"
-    printf "all regular bash commands are also in the shell, such as cd and exit.\n"
+    printf "\ninf, info: Prints info about the shell"
+    printf "\ntime, 24hr: Prints the current time"
+    printf "\ndate, europedate: Prints the current date"
+    printf "\ncls, clear: Clears the screen"
+    printf "\nunixtime: Prints the current time in unix timestamps"
+    printf "\nbeep: It beeps.\n"
+    printf "rps, rockpaperscissors: Play a game of rock paper scissors\n"
+    printf "ver, version: Prints shell version\n"
+    printf "disable_logo: Disables ASCII logo on startup.\n"
+    printf "enable_logo: Enables ASCII logo on startup.\n"
+    printf "All regular bash commands are also in the shell, such as cd and exit.\n"
+  },
+  'clock' => lambda {
+    system "ruby modules/clock.rb"
   },
   ';' => lambda {
-    puts "Dude, get out of here, this isn't Java." 
-    sleep 1
+    puts "rsh: syntax error near unexpected token ':'"
+  },
+  '|' => lambda {
+    puts "rsh: syntax error near unexpected token '|'"
   },
   'calc' => lambda {
     exec("./calc")
@@ -138,7 +162,7 @@ builtin = {
     sleep 2
     puts "Ann1kaB, made the ASCII art module".blue
     sleep 2
-    puts "Thanks for using Ruby Shell.".blink.red
+    puts "Thanks for using RSH.".blink.red
     sleep 7
     puts "https://soundcloud.com/nucleus408/".blink.green
     sleep 2
@@ -160,28 +184,28 @@ until compScore == 5 || humanScore == 5
 
     #human wins
     if (human == "rock" && comp == "scissors") || (human == "scissors" && comp == "paper") || (human == "paper" && comp == "rock")
-        p "You won!"
+        puts "You won!"
         humanScore += 1
 
     #draws
     elsif (human == "rock" && comp == "rock") || (human == "paper" && comp == "paper") || (human == "scissors" && comp == "scissors")
-        p "Draw! No point awarded"
+        puts "Draw! No point awarded"
 
     #computer wins
     else compScore += 1
-        p "You lose."   
+        puts "You lose."   
     end
 
     #Resulted Scores
-    p "Human Score: #{humanScore}"
-    p "Computer Score: #{compScore}"
+    puts "Human Score: #{humanScore}"
+    puts "Computer Score: #{compScore}"
 
     #Resulted Choices
-    p "Human chose: #{human}"
-    p "Computer chose: #{comp}"
+    puts "Human chose: #{human}"
+    puts "Computer chose: #{comp}"
 end
     #Tell who wins
-    p humanScore > compScore ? ("YOU WIN!") : ("COMPUTER WINS!.")
+    puts humanScore > compScore ? ("YOU WIN! :D") : ("YOU LOSE! :(")
   }
 }
 # Loads the color module on class String
@@ -189,6 +213,16 @@ end
 
 class String
   include Colors
+end
+
+# First boot message
+
+if config['first_boot'] == true
+  puts "Welcome to rsh! We see that it is your first time running the shell. You can use the command 'enable_logo' to enable an ASCII art startup logo, or 'disable_logo' to disable the ASCII art logo. Enter 'help' for some basic commands you can use. And with that out of the way, thanks for downloading rsh! :D".red
+  sleep 4
+  puts "Getting ready for the first time..."
+  sleep 4
+  system "bash modules/first_boot.sh"
 end
 
 # ascii art from ann1kab, thanks by the way!
@@ -199,8 +233,10 @@ def render_ascii_art(string)
 end
 
 # Put the warning inside README.md
-puts render_ascii_art(config['ascii'])
-sleep 1
+if logo['logo_enabled'] == true
+  puts render_ascii_art(config['ascii'])
+  sleep 1
+end
 
 puts config['message'].blink.red
 sleep 0.7
@@ -279,6 +315,6 @@ rescue SystemExit => f
   puts "\e[H\e[2J"
   sleep 0.2
 rescue StandardError => g
-  puts "rsh: invalid quote"
+  puts "rsh: error constructing the regular expression from the pattern '^/bin/. $' failed. caused by: Literal '\n\ not allowed."
   retry
 end

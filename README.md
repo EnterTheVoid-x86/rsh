@@ -1,4 +1,4 @@
-# Ruby Shell v1.38
+# rsh v1.39 (Short for Ruby SHell)
 
 A "simple" UNIX shell written in Ruby because why not!
 
@@ -6,13 +6,14 @@ Disclamer: This shell shouldn't be ran with Bundle.
 
 
 
-Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unofficial modified fork of it with many added feautres and more. Go check them out, they make awesome stuff, such as cool-tty! Oh and yes, this might be PR'd.
+Credits to Stargirl-chan on GitHub for the original rsh. This is an unofficial modified fork of it with many added feautres and more. Go check them out, they make awesome stuff, such as cool-tty! Oh and yes, this might be PR'd.
 # What's new
 
 ## Recently added
 - Rock Paper Scissors
 - Calculator
 - Code optimizations
+- Complete branding overhaul.
 ## Choices for prompt are:
 - The regular arrow
 - Lambda
@@ -27,13 +28,14 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
  - A semi working history ~~only works as long as the shell session is running~~
  - Dev Mode
  - Joe biden
- - Can run system commands! This is literally the most useful thing about it
+ - Has benefits from other shells like BASH
+ - Can run System commands! ~~Yeah, no dip~~
  - Written in Ruby!
  - Lightweight
- - Tab to list everything in your current directory, or to autofill with a letter in the input field.
+ - Tab to list everything in your current directory, or to complete your command.
  - Date and time commands
  - Basic customization
- - Did I fix the color?
+ - Working colors
  - Can run on your grandma's old beaten up Windows XP Computer, if you install Linux on it, if ya know what I mean lmao
  - Sample Text
  - Eggs
@@ -46,7 +48,7 @@ Credits to Stargirl-chan on GitHub for the original Ruby-Shell. This is an unoff
 
 Run `git clone https://github.com/EnterTheVoid-x86/Ruby-Shell-Unofficial.git && cd Ruby-Shell-Unoffical/ && ruby main.rb`
 **OR**
-Go to [this website](https://replit.com/@vansamssecret/Ruby-Shell-v130?v=1) in your browser, it's easier **AND** you don't take up any of your hard drive space. =)
+Go to [this website](https://replit.com/@Amythest/rsh-v139?v=1) in your browser, it's easier **AND** you don't take up any of your hard drive space. =)
 ## Q&A
 
 **Why?**
