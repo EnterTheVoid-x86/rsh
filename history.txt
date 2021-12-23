@@ -279,3 +279,5 @@ pkill i3
 pkill x
 pkill fluxbox
 i3
+time
+time

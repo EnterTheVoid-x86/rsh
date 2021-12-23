@@ -82,7 +82,7 @@ builtin = {
     printf "\nCreated 2020, current version was released on November 26th, 2021.\n".blink.magenta
   },
   'time' => lambda {
-    puts "The time is:", time.strftime("%I:%M %p.") 
+    puts "The time is:", time.strftime("%I:%M:%S %p.") 
   },
   'date' => lambda {
     puts "Today is:", time.strftime("%m/%d/%Y.") 
