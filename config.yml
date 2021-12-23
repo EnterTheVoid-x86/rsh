@@ -1,4 +1,4 @@
-first_time: true
+first_boot: true
 prompt: '~$ '
 message: 'Welcome to rsh, v1.39. Enter “help” for help.'
 ascii: 'logo.txt' 
