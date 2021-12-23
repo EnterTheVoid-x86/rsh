@@ -8,6 +8,7 @@ def calc
     str = gets.chomp.split(" ")  # splits into array, rejects blanks
     return if str[0] == 'exit'     # quit if first element is 'q', 'exit', or 'quit'
     return if str[0] == 'quit'
+    return if str[0] == 'q'
     
 
     operand1 = str[0].to_i

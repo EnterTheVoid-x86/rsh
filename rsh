@@ -66,7 +66,7 @@ builtin = {
     puts "No, it's not a reference to Half-Life."
   },
   'cls' => lambda {
-    puts "\e[H\e[2J"
+    system "clear"
   },
   'beep' => lambda {
     puts 7.chr, "Beep!"
