@@ -78,7 +78,8 @@ while [ $SECONDS -lt $end ]
 do
     printf "\b${sp:i++%${#sp}:1}"
 done
-printf "first_boot: false
+printf "
+first_boot: false
 prompt: '~$ '
 message: 'Welcome to rsh v1.39. Enter "help" for help.'
 # Hey there! If you want to know how to change your ASCII art logo on startup, just simply replace the logo in logo.txt with your ASCII art! Got it?
