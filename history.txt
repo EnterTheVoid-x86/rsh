@@ -3,23 +3,3 @@
 # during your current session, as you can not use 
 # previous commands if you restart the shell. 
 # Sorry about that!
-cls
-help
-help
-a
-calc
-1 / 0
-calc
-print 1 / 0
-1 / 0
-echo
-echo 1 / 0
-echo 1/0
-printf
-printf 1 / 0
-printf 1/0
-printf 1/0
-cls
-cls
-ver
-version
