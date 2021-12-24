@@ -305,7 +305,7 @@ end
 
 puts config['message'].blink.red
 sleep 0.7
-puts "GitHub: EnterTheVoid-x86/Ruby-Shell-Unofficial".blink.green
+puts "GitHub: EnterTheVoid-x86/rsh".blink.green
 sleep 0.7
 puts "Maintained by ^--- that guy".blink.green
 sleep 0.7
