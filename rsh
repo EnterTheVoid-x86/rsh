@@ -8,6 +8,7 @@ require 'shellwords'
 require 'socket'
 require 'etc'
 require "yaml"
+require 'io/console'
 
 
 time = Time.new
@@ -221,9 +222,30 @@ end
 if config['first_boot'] == true
   puts "Welcome to rsh! We see that it is your first time running the shell. You can use the command 'enable_logo' to enable an ASCII art startup logo, or 'disable_logo' to disable the ASCII art logo. Enter 'help' for some basic commands you can use. And with that out of the way, thanks for downloading rsh! :D".red
   sleep 4
-  puts "Getting ready for the first time..."
+  puts "Press any key to continue..."
+  STDIN.getch
+  system ("clear")
   sleep 4
-  system "bash modules/first_boot.sh"
+  puts "rsh is getting ready for the first time."
+  sleep 1
+  system ("clear")
+  puts "rsh is getting ready for the first time.."
+  sleep 1
+  system ("clear")
+  puts "rsh is getting ready for the first time..."
+  sleep 1
+  system ("clear")
+  puts "rsh is getting ready for the first time."
+  sleep 1
+  system ("clear")
+  puts "rsh is getting ready for the first time.."
+  sleep 1
+  system ("clear")
+  puts "rsh is getting ready for the first time..."
+  sleep 1
+  system ("clear")
+  sleep 2
+  system "sh modules/first_boot.sh"
 end
 
 # ascii art from ann1kab, thanks by the way!
