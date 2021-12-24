@@ -87,6 +87,9 @@ builtin = {
   'ver' => lambda {
     puts "rsh v1.39".blink.red
   },
+  'print 1 / 0' => lambda {
+    puts "rsh: error: division by zero is undefined".blink.red
+  },
   'version' => lambda {
     puts "rsh v1.39".blink.red
   },
@@ -103,6 +106,45 @@ builtin = {
   },
   'date' => lambda {
     puts "Today is:", time.strftime("%m/%d/%Y.") 
+  },
+  'uninstall' => lambda {
+    puts "Are you sure you want to uninstall rsh? (y/n)".blink.red
+    yesorno = gets.chomp
+    if yesorno == "y"
+      system ("clear")
+      puts 7.chr
+      sleep 4
+      puts "rsh is now uninstalling.".blink.red
+      sleep 1
+      system ("clear")
+      puts "rsh is now uninstalling..".blink.red
+      sleep 1
+      system ("clear")
+      puts "rsh is now uninstalling...".blink.red
+      sleep 1
+      system ("clear")
+      puts "rsh is now uninstalling.".blink.red
+      sleep 1
+      system ("clear")
+      puts "rsh is now uninstalling..".blink.red
+      sleep 1
+      system ("clear")
+      puts "rsh is now uninstalling...".blink.red
+      puts "Uninstall complete. We're sad to see you go!".red
+      system ("rm -rf rsh")
+      system ("rm -rf rshdev")
+      system ("rm -rf main")
+      system ("rm -rf omr")
+      system ("rm -rf logo.yml")
+      system ("rm -rf config.yml")
+      system ("rm -rf README.md")
+      system ("rm -rf history.txt")
+      system ("rm -rf modules/")
+      system ("rm -rf Gemfile")
+      system ("rm -rf Gemfile.lock")
+      system ("rm -rf logo.txt")
+      exit
+      end
   },
   'unixtime' => lambda {
     puts "Unix time as of right now is:", time.strftime("%s.")
@@ -134,7 +176,7 @@ builtin = {
     printf "All regular bash commands are also in the shell, such as cd and exit.\n"
   },
   'clock' => lambda {
-    system "ruby modules/clock.rb"
+    load "modules/clock.rb"
   },
   ';' => lambda {
     puts "rsh: syntax error near unexpected token ':'"
@@ -143,10 +185,10 @@ builtin = {
     puts "rsh: syntax error near unexpected token '|'"
   },
   'calc' => lambda {
-    system "ruby modules/calc.rb"
+    load "ruby modules/calc.rb"
   },
   'calculator' => lambda {
-    system "ruby modules/calc.rb"
+    load "ruby modules/calc.rb"
   },
   'NUCLE198511' => lambda {
     puts "\e[H\e[2J"

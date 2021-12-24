@@ -14,6 +14,7 @@ Credits to Stargirl-chan on GitHub for the original rsh. This is an unofficial m
 - Calculator
 - Code optimizations
 - Complete branding overhaul.
+- Uninstaller
 ## Choices for prompt are:
 - The regular arrow
 - Lambda
