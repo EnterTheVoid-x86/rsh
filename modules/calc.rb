@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 def calc
   puts "Enter 'q' to quit."
@@ -28,12 +28,12 @@ def calc
     when :x then puts operand1 * operand2
     when :"<>" then puts operand1 != operand2
     else
-      puts "Invalid input"
+      puts "Syntax Error."
     end
   end
 
 rescue NoMethodError
-  puts "Invaid input"
+  puts "Syntax Error."
 retry
 
 rescue Interrupt

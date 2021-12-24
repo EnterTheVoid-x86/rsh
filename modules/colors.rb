@@ -1,3 +1,6 @@
+#!/usr/bin/env ruby
+# idk who would want to run a literal class on it's own,
+# but if you're a maniac go ahead!
 module Colors
 
   def black;          "\e[30m#{self}\e[0m" end

@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 system "clear"
 system "tput civis"
 
