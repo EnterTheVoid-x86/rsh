@@ -1,4 +1,4 @@
-# rsh v1.39 (Short for Ruby SHell)
+# rsh v1.40 (Short for Ruby SHell)
 
 A "simple" UNIX shell written in Ruby because why not!
 
@@ -15,6 +15,7 @@ Credits to Stargirl-chan on GitHub for the original rsh. This is an unofficial m
 - Code optimizations
 - Complete branding overhaul.
 - Uninstaller
+- Modified pfetch script
 ## Choices for prompt are:
 - The regular arrow
 - Lambda

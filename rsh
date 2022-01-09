@@ -1,8 +1,7 @@
 #!/usr/bin/env ruby
 
-# rsh v1.39
-# Written by Stargirl-chan
-# Modified and maintained by EnterTheVoid-x86
+# rsh v1.40
+# Written by EnterTheVoidx86
 require 'readline'
 require 'shellwords'
 require 'socket'
@@ -178,6 +177,9 @@ builtin = {
   'clock' => lambda {
     load "modules/clock.rb"
   },
+  'fetch' => lambda {
+    system ("bash modules/fetch.sh")
+  },
   ';' => lambda {
     puts "rsh: syntax error near unexpected token ':'"
   },
@@ -303,6 +305,7 @@ if logo['logo_enabled'] == true
   sleep 1
 end
 
+system ("export SHELL=rsh")
 puts config['message'].blink.red
 sleep 0.7
 puts "GitHub: EnterTheVoid-x86/rsh".blink.green
