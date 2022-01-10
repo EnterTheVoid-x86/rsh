@@ -86,6 +86,10 @@ builtin = {
   'ver' => lambda {
     puts "rsh v1.39".blink.red
   },
+  'restart' => lambda {
+    system ("clear")
+    load "rsh"
+  },
   'print 1 / 0' => lambda {
     puts "rsh: error: division by zero is undefined".blink.red
   },

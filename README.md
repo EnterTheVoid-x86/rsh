@@ -16,6 +16,7 @@ Credits to Stargirl-chan on GitHub for the original rsh. This is an unofficial m
 - Complete branding overhaul.
 - Uninstaller
 - Modified pfetch script
+- Restart command
 ## Choices for prompt are:
 - The regular arrow
 - Lambda
