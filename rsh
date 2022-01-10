@@ -192,6 +192,9 @@ builtin = {
   'calculator' => lambda {
     load "ruby modules/calc.rb"
   },
+  'racism' => lambda {
+    puts "You better freakin' not be racist! I'll kill you if you are!"
+  },
   'NUCLE198511' => lambda {
     puts "\e[H\e[2J"
     sleep 1
@@ -202,13 +205,13 @@ builtin = {
     puts 7.chr
     puts "The Wall of Credits".red
     sleep 2
-    puts "Stargirl-chan, made the shell".red
+    puts "EnterTheVoidx86, made the shell".green
     sleep 2
-    puts "EnterTheVoidx86, created the best fork".blink.green
+    puts "Stargirl-chan, created the original Ruby Shell".red
     sleep 2
     puts "Ann1kaB, made the ASCII art module".blue
     sleep 2
-    puts "Thanks for using RSH.".blink.red
+    puts "Thanks for using RSH.".red
     sleep 7
     puts "https://soundcloud.com/nucleus408/".blink.green
     sleep 2
