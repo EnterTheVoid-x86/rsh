@@ -6,7 +6,7 @@ require 'readline'
 require 'shellwords'
 require 'socket'
 require 'etc'
-require "yaml"
+require 'yaml'
 require 'io/console'
 
 
@@ -35,6 +35,7 @@ end
 
 
 def print_exception(exception, explicit)
+  puts "rsh: exception occurred"
   puts "[#{explicit ? 'EXPLICIT' : 'INEXPLICIT'}] #{exception.class}: #{exception.message}"
   puts exception.backtrace.join("\n")
 end
@@ -72,19 +73,19 @@ builtin = {
     puts 7.chr, "Beep!"
   },
   'inf' => lambda {
-    puts "rsh v1.39".blink.red
+    puts "rsh v1.40".blink.red
     printf "Powered by Ruby v3.03".blink.red
     puts "\nMaintained by", "EnterTheVoid-x86".blink.green
-    printf "\nCreated 2020, current version was released on December 23, 2021.\n".blink.magenta
+    printf "\nCreated 2020, current version was released on Janurary 10, 2022.\n".blink.magenta
   },
   'info' => lambda {
-    puts "rsh v1.39".blink.red
+    puts "rsh v1.40".blink.red
     printf "Powered by Ruby v3.03".blink.red
     puts "\nMaintained by", "EnterTheVoid-x86".blink.green
-    printf "\nCreated 2020, current version was released on December 23, 2021.\n".blink.magenta
+    printf "\nCreated 2020, current version was released on Janurary 10, 2022.\n".blink.magenta
   },
   'ver' => lambda {
-    puts "rsh v1.39".blink.red
+    puts "rsh v1.40".blink.red
   },
   'restart' => lambda {
     system ("clear")
@@ -94,7 +95,7 @@ builtin = {
     puts "rsh: error: division by zero is undefined".blink.red
   },
   'version' => lambda {
-    puts "rsh v1.39".blink.red
+    puts "rsh v1.40".blink.red
   },
   'disable_logo' => lambda {
     puts "Logo is now disabled."

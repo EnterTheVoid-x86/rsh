@@ -9,6 +9,8 @@ printf "\n2: Lambda"
   sleep 0.5
 printf "\n3: ~$ aka Fish Prompt"
   sleep 0.5
+printf "\n4: Emojiprompt"
+  sleep 0.5
 printf "\nPress Control + C to exit."
   read promptsettings
 
@@ -81,6 +83,32 @@ done
 printf "
 first_boot: false
 prompt: '~$ '
+message: 'Welcome to rsh v1.40. Enter "help" for help.'
+# Hey there! If you want to know how to change your ASCII art logo on startup, just simply replace the logo in logo.txt with your ASCII art! Make sure you ran enable_logo too, Got it?
+ascii: 'logo.txt'"  >> config.yml
+printf "\nFinished."
+sleep 1
+printf "\n"
+exec ruby main
+elif [ $promptsettings == 4 ]
+  then
+    sleep 0.5   
+    end=$((SECONDS+3))
+printf "Setting prompt symbol to Emojiprompt. Preview: \n
+[runner@d7bf2abcc65b]-(/home/runner/Ruby-Linux-Shell-1/ruby-shell)
+~💲⫸"
+sleep 2
+rm -rf config.yml
+i=1
+sp="/-\|_"
+echo -n ' '
+while [ $SECONDS -lt $end ]
+do
+    printf "\b${sp:i++%${#sp}:1}"
+done
+printf "
+first_boot: false
+prompt: '~💲⫸ '
 message: 'Welcome to rsh v1.40. Enter "help" for help.'
 # Hey there! If you want to know how to change your ASCII art logo on startup, just simply replace the logo in logo.txt with your ASCII art! Make sure you ran enable_logo too, Got it?
 ascii: 'logo.txt'"  >> config.yml
