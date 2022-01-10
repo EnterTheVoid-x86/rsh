@@ -172,7 +172,7 @@ builtin = {
     printf "ver, version: Prints shell version\n"
     printf "disable_logo: Disables ASCII logo on startup.\n"
     printf "enable_logo: Enables ASCII logo on startup.\n"
-    printf "fetch: displays user system info in a small panel. based on pfetch by dylanaraps.\n
+    printf "fetch: displays user system info in a small panel. based on pfetch by dylanaraps.\n"
     printf "All regular bash commands are also in the shell, such as cd and exit.\n"
   },
   'clock' => lambda {
