@@ -370,7 +370,7 @@ begin
       file.write("#{Readline::HISTORY.to_a.last}\n")
     rescue IOError => h
       # File not given perms, etc.
-      puts "Failed to open file."
+      puts "rsh: failed to open critical file."
     ensure
       file.close unless file.nil?
     end
@@ -384,12 +384,12 @@ rescue Interrupt => e
 rescue NoMethodError => d
   printf "\nQuitting...".red
   sleep 1
-  puts "\e[H\e[2J"
+  system ("clear")
   sleep 0.2
 rescue SystemExit => f 
   printf "\nQuitting...".red
   sleep 1
-  puts "\e[H\e[2J"
+  system ("clear")
   sleep 0.2
 rescue StandardError => g
   puts "rsh: error constructing the regular expression from the pattern '^/bin/. $' failed. caused by: Literal '\n\ not allowed."
