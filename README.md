@@ -21,6 +21,7 @@ Credits to Stargirl-chan on GitHub for the original rsh. This is an unofficial m
 - The regular arrow
 - Lambda
 - ~$ aka the Fish Prompt
+- Emojiprompt (soon)
 
 +    ~~That's it for now~~
 
