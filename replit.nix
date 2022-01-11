@@ -3,6 +3,6 @@
         pkgs.ruby_3_0
         pkgs.solargraph
         pkgs.rufo
-        pkgs.neofetch
+        pkgs.shc
 	];
 }

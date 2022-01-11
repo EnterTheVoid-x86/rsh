@@ -184,7 +184,7 @@ builtin = {
     load "modules/clock.rb"
   },
   'fetch' => lambda {
-    system ("bash modules/fetch.sh")
+    system ("bash modules/fetch")
   },
   ';' => lambda {
     puts "rsh: syntax error near unexpected token ':'"
