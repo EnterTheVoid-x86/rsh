@@ -35,7 +35,7 @@ end
 
 
 def print_exception(exception, explicit)
-  puts "rsh: exception occurred"
+  puts "rsh: error occurred; details below"
   puts "[#{explicit ? 'EXPLICIT' : 'INEXPLICIT'}] #{exception.class}: #{exception.message}"
   puts exception.backtrace.join("\n")
 end
