@@ -1,4 +1,4 @@
-# rsh v1.40 (Short for Ruby SHell)
+# rsh v1.41 (Short for Ruby SHell)
 
 A "simple" UNIX shell written in Ruby because why not!
 

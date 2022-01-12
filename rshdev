@@ -3,7 +3,7 @@ require_relative "modules/colors.rb"
 class String
     include Colors
 end
-  puts "Loading rsh v1.40 in development mode... Warning: Ctrl + C will crash the shell in this mode.".blink.red
+  puts "Loading rsh v1.41 in development mode... Warning: Ctrl + C will crash the shell in this mode.".blink.red
 sleep 0.7
 exec "irb rsh"
   
