@@ -18,7 +18,7 @@ if [ $promptsettings == 1 ]
   then
     sleep 0.5
     end=$((SECONDS+3))
-printf "Setting prompt arrow to lambda. Preview: 
+printf "Setting prompt arrow to default. Preview: 
 \n[runner@d7bf2abcc65b]-(/home/runner/Ruby-Linux-Shell-1/ruby-shell)
 ↳"
 sleep 1

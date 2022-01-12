@@ -111,6 +111,9 @@ builtin = {
   'date' => lambda {
     puts "Today is:", time.strftime("%m/%d/%Y.") 
   },
+  'dirname' => lambda {
+    puts Dir.pwd
+  },
   'uninstall' => lambda {
     puts "Are you sure you want to uninstall rsh? (y/n)".blink.red
     yesorno = gets.chomp
