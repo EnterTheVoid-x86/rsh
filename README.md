@@ -1,3 +1,5 @@
+this kinda sucks but whatever
+
 # rsh v1.41 (Short for Ruby SHell)
 
 A "simple" UNIX shell written in Ruby because why not!
